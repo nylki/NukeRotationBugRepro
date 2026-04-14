@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E2E211672F8E8993000DA3CA /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = E2E211662F8E8993000DA3CA /* Nuke */; };
+		E2E211692F8E8993000DA3CA /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = E2E211682F8E8993000DA3CA /* NukeUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E2E211572F8E895F000DA3CA /* NukeRotationBugRepro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NukeRotationBugRepro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2E211672F8E8993000DA3CA /* Nuke in Frameworks */,
+				E2E211692F8E8993000DA3CA /* NukeUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = NukeRotationBugRepro;
 			packageProductDependencies = (
+				E2E211662F8E8993000DA3CA /* Nuke */,
+				E2E211682F8E8993000DA3CA /* NukeUI */,
 			);
 			productName = NukeRotationBugRepro;
 			productReference = E2E211572F8E895F000DA3CA /* NukeRotationBugRepro.app */;
@@ -94,6 +103,9 @@
 			);
 			mainGroup = E2E2114E2F8E895F000DA3CA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E2E211652F8E8993000DA3CA /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E2E211582F8E895F000DA3CA /* Products */;
 			projectDirPath = "";
@@ -332,6 +344,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E2E211652F8E8993000DA3CA /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = exactVersion;
+				version = 13.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E2E211662F8E8993000DA3CA /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2E211652F8E8993000DA3CA /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		E2E211682F8E8993000DA3CA /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2E211652F8E8993000DA3CA /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E2E2114F2F8E895F000DA3CA /* Project object */;
 }
